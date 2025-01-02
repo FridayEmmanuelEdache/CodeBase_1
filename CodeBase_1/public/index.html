@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Format</title>
+  <style>
+    *{
+      font-family: 'sono', sans-serif;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      gap: 20px;
+    }
+   .plan{
+    text-align: center;
+    background-color: rgb(143, 141, 141);
+    padding: 10px 10px 0 10px;
+    border-radius: 5px;
+    height: 400px;
+    width: 300px;
+    padding-top: 5%;
+    justify-content: center;
+   }
+   .price{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    flex: 1;
+   }
+   button{
+    font-size: 15px;
+    color: white;
+    background-color: rgb(192, 79, 71);
+    border-radius: 5px;
+    border: none;
+    height: 3vh;
+    cursor: pointer;
+   }
+  p{
+  font-size: 20px;
+ }
+   @media (max-width: 1240px){
+    .container{
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center;
+    }
+   }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="plan">
+      <h3>Basic</h3>
+      <div class="price">$11.99/month</div>
+      <p>10GB Storage</p>
+      <p>1 User</p>
+      <p>Support</p>
+      <button>Sign Up</button>
+    </div>
+
+    <div class="plan">
+      <h3>Standard</h3>
+      <div class="price">$19.99/month</div>
+      <p>5GB Storage</p>
+      <p>5 User</p>
+      <p>Phone & Email Support</p>
+      <button>Sign Up</button>
+    </div>
+
+    <div class="plan">
+      <h3>Premium</h3>
+      <div class="price">$49.99/month</div>
+      <p>10GB Storage</p>
+      <p>10 User</p>
+      <p>24/7 Support</p>
+      <button>Sign Up</button>
+    </div>
+
+</body>
+</html>
